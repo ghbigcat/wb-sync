@@ -35,6 +35,15 @@ WorkBuddy 的对话记录走云端，但下面这些**只在本机**，换电脑
 ## 安装
 
 ```bash
+# 从 GitHub 直接安装成 WorkBuddy skill（推荐，一行）
+git clone https://github.com/ghbigcat/wb-sync.git ~/.workbuddy/skills/wb-sync
+
+# 或用发布包解压到 ~/.workbuddy/skills/wb-sync
+```
+
+装好后在 WorkBuddy 里说「同步我的产物」即可触发；也可直接用命令行：
+
+```bash
 # 方式一：直接跑
 python wb-sync.py doctor
 

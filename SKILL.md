@@ -38,6 +38,14 @@ WorkBuddy 的**对话记录默认云端同步**，但下面这些东西**只存�
 
 ## 快速开始
 
+### 0. 装到新机器
+
+```bash
+git clone https://github.com/ghbigcat/wb-sync.git ~/.workbuddy/skills/wb-sync
+```
+
+workbuddy 会自动识别该技能目录，无需注册。
+
 ### 1. 建一个空的私有仓库
 
 GitHub 新建 **Private** 仓库，例如 `wb-sync-data`（不要勾选 README 初始化）。
