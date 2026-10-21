@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+dist/
+_*.log
+_*.txt
+config.json
+.wb-sync/

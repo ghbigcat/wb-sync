@@ -1,0 +1,70 @@
+{
+  "version": 1,
+  "repo": "https://github.com/<your-account>/wb-sync-data.git",
+  "branch": "main",
+  "staging_dir": "~/.wb-sync/repo",
+  "workbuddy_dir": "~/.workbuddy",
+  "token_env": "WB_SYNC_TOKEN",
+  "assets": {
+    "identity": {
+      "enabled": true,
+      "source": ".",
+      "include": [
+        "SOUL.md",
+        "IDENTITY.md",
+        "USER.md",
+        "MEMORY.md"
+      ]
+    },
+    "skills": {
+      "enabled": true,
+      "source": "skills",
+      "include": [
+        "*"
+      ],
+      "exclude": []
+    },
+    "automations": {
+      "enabled": true,
+      "source": "automations",
+      "include": [
+        "**/*"
+      ],
+      "exclude": []
+    },
+    "mcp": {
+      "enabled": true,
+      "source": "mcp.json",
+      "mode": "template"
+    }
+  },
+  "artifacts": {
+    "enabled": false,
+    "roots": [
+      "~/WorkBuddy-Output"
+    ],
+    "include": [
+      "**/*"
+    ],
+    "exclude": [
+      "**/node_modules/**",
+      "**/.git/**",
+      "**/__pycache__/**",
+      "**/.venv/**",
+      "**/.ref/**",
+      "**/dist/**",
+      "**/build/**",
+      "**/*.tmp",
+      "**/*.log",
+      "**/_*",
+      "**/.DS_Store",
+      "**/Thumbs.db"
+    ],
+    "max_file_mb": 50
+  },
+  "options": {
+    "backup_before_pull": true,
+    "backup_keep": 5,
+    "commit_message": "wb-sync: {date}"
+  }
+}
